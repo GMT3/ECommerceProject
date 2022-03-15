@@ -21,7 +21,14 @@ Lama Dev <a href="https://github.com/safak">Gitthub Profile</a> <a href="https:/
         <h6>Go to <a href="https://dashboard.stripe.com/">Stripe Dashboard</a> and click on the <a href="https://dashboard.stripe.com/test/developers">Developers</a> Button</h6>
     </li>
     <li>
-        <h6>Click on the <a href="https://dashboard.stripe.com/test/apikeys">API key</a> tab</h6>
+        <h6>Click on the <a href="https://dashboard.stripe.com/test/apikeys">API keys</a> tab</h6>
+    </li>
+    <li>
+        <h6>Copy the </h6>
+        <br/>
+        ```
+        virtualenv env
+        ```
     </li>
 </ol>
 
