@@ -35,7 +35,6 @@ REACT_APP_STRIPE=pk_test_yourstripepublishablekey
 <ul>
     <li>
         <h6>Copy the <strong>Secret key</strong> and add it to the <strong>.env</strong> file in the <a href="./server">server folder</a></h6>
-        <hr/>
         <h5 style="color:red;">NOTE make sure you do not publish this <strong>Secret key</strong> anyway</h5>
     </li>
 </ul>
