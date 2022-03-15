@@ -15,7 +15,7 @@ Lama Dev <a href="https://github.com/safak">Gitthub Profile</a> <a href="https:/
         </ul>
     </li>
     <li>
-        <h6>Create <strong>.env</strong> files in <a href="./website">website folder</a> and <a href="./server">server folder</h6>
+        <h6>Create <b>.env</b> files in <a href="./website">website folder</a> and <a href="./server">server folder</h6>
     </li>
     <li>
         <h6>Go to <a href="https://dashboard.stripe.com/">Stripe Dashboard</a> and click on the <a href="https://dashboard.stripe.com/test/developers">Developers</a> Button</h6>
@@ -24,7 +24,7 @@ Lama Dev <a href="https://github.com/safak">Gitthub Profile</a> <a href="https:/
         <h6>Click on the <a href="https://dashboard.stripe.com/test/apikeys">API keys</a> tab</h6>
     </li>
     <li>
-        <h6>Copy the <strong>Publishable key</strong> and insert in the <strong>.env</strong> file in the <a href="./website">website folder</a></h6>
+        <h6>Copy the <b>Publishable key</b> and insert in the <b>.env</b> file in the <a href="./website">website folder</a></h6>
     </li>
 </ul>
 
@@ -34,12 +34,46 @@ REACT_APP_STRIPE=pk_test_yourstripepublishablekey
 
 <ul>
     <li>
-        <h6>Copy the <strong>Secret key</strong> and add it to the <strong>.env</strong> file in the <a href="./server">server folder</a></h6>
-        <h5 style="color:red;">NOTE make sure you do not publish this <strong>Secret key</strong> anyway</h5>
+        <h6>Copy the <b>Secret key</b> and add it to the <b>.env</b> file in the <a href="./server">server folder</a></h6>
+        <h5 style="color:red;">NOTE make sure you do not publish this <b>Secret key</b> anyway</h5>
     </li>
 </ul>
 
 ```
-STRIPE_KEY=sk_test_yourstripepublishablekey
+STRIPE_KEY=sk_test_yourstripesecretkey
 ```
 
+<ul>
+    <li>
+        <h6>Add a <b>PASSWORD SECRET</b> in the <b>.env</b> file in the <a href="./server">server folder</a></h6>
+    </li>
+</ul>
+
+```
+PASS_SEC=AnywaySecretValue
+```
+
+<ul>
+    <li>
+        <h6>Add a <b>JSON WEB TOKEN SECRET</b> in the <b>.env</b> file in the <a href="./server">server folder</a></h6>
+    </li>
+</ul>
+
+```
+JWT_SEC=AnywaySecretValue
+```
+
+<ul>
+    <li>
+        <h6>Add a <b>Mongo DB connection string</b> in the <b>.env</b> file in the <a href="./server">server folder</a></h6>
+        <h6>How to get connection string from <a href="https://studio3t.com/knowledge-base/articles/connect-to-mongodb-atlas/">mongodb altas</a></h6>
+    </li>
+</ul>
+
+```
+MONGO_URL=mongodb+srv://[user]:[password]@[clustername].[example].mongodb.net/[databasename]?retryWrites=true&w=majority
+```
+
+
+### Backend Base URL
+<h6>To change the backend base url you'll find it in the <a href="./website/src/requestMethods.js">requestMethods.js</a> file</h6>
