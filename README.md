@@ -6,7 +6,7 @@ Lama Dev <a href="https://github.com/safak">Gitthub Profile</a> <a href="https:/
 
 
 ## Instructions
-<ol>
+<ul>
     <li>
         <h6>Make sure you have the following accounts</h6>
         <ul>
@@ -24,11 +24,23 @@ Lama Dev <a href="https://github.com/safak">Gitthub Profile</a> <a href="https:/
         <h6>Click on the <a href="https://dashboard.stripe.com/test/apikeys">API keys</a> tab</h6>
     </li>
     <li>
-        <h6>Copy the </h6>
-        <br/>
-        ```
-        virtualenv env
-        ```
+        <h6>Copy the <strong>Publishable key</strong> and insert in the <strong>.env</strong> file in the <a href="./website">website folder</a></h6>
     </li>
-</ol>
+</ul>
+
+```
+REACT_APP_STRIPE=pk_test_yourstripepublishablekey
+```
+
+<ul>
+    <li>
+        <h6>Copy the <strong>Secret key</strong> and add it to the <strong>.env</strong> file in the <a href="./server">server folder</a></h6>
+        <hr/>
+        <h5 style="color:red;">NOTE make sure you do not publish this <strong>Secret key</strong> anyway</h5>
+    </li>
+</ul>
+
+```
+STRIPE_KEY=sk_test_yourstripepublishablekey
+```
 
