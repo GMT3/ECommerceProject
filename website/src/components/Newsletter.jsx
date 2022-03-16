@@ -51,12 +51,21 @@ const Button = styled.button`
 const Newsletter = () => {
 
   const [email, setEmail] = useState("");
+  const [message, setMessage] = useState('');
 
   const onSubscribe = () => {
     if(email !== ""){
       swal('Evelyn Store', `Thanks for subscribing to News Letter (${email})`, 'success');
     }
-    
+  }
+
+  const onMessage = () => {
+    if(message !== ""){
+      const number = 265991444573;
+      const text = encodeURI(message);
+      window.open(`https://wa.me/${number}?text=${text}`, "_blank")
+    }
+   
   }
   return (
     <Container>
@@ -68,6 +77,18 @@ const Newsletter = () => {
           <Send  onClick={onSubscribe} />
         </Button>
       </InputContainer>
+      <br/><br/><br/>
+      <br/><br/><br/>
+      <br/><br/><br/>
+      <Title>Send Us a Message</Title>
+      <Desc>Get in touch with us instantly on Whatsapp</Desc>
+      <InputContainer>
+        <Input placeholder="Message" value={message} onChange={e=>setMessage(e.target.value)} />
+        <Button>
+          <Send  onClick={onMessage} />
+        </Button>
+      </InputContainer>
+      <br/><br/><br/>
     </Container>
   );
 };

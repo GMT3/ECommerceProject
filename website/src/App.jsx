@@ -12,12 +12,14 @@ import {
 } from "react-router-dom";
 import Success from "./pages/Success";
 import { useSelector } from "react-redux";
+import ScrollToTop from "./components/ScrollToTop";
 
 const App = () => {
   const user = useSelector((state) => state.user.currentUser);
   return (
     <Router>
       <Switch>
+        
         <Route exact path="/">
           <Home />
         </Route>
@@ -38,6 +40,7 @@ const App = () => {
           {user ? <Redirect to="/" /> : <Register />}
         </Route>
       </Switch>
+      <ScrollToTop/>
     </Router>
   );
 };
